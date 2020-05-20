@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:background="@color/colorAccent"
+
+    tools:context=".AddPostActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/ln_add"
+        android:orientation="horizontal"
+        android:background="@color/colorbackground"
+        >
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:text="Đăng phòng"
+            android:textSize="20sp"
+            android:gravity="center"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="Hủy"
+            />
+
+    </LinearLayout>
+
+
+    <com.vinay.stepview.HorizontalStepView
+        android:id="@+id/sv_AddInformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ln_add"/>
+
+    <LinearLayout
+        android:layout_below="@id/sv_AddInformation"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin phòng"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOẠI PHÒNG"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_Homestay"
+            android:text="Kí túc xá/ Homestay"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_rentRoom"
+            android:text="Phòng cho thuê"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_shareRoom"
+            android:text="Phòng ở ghép"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cb_house"
+            android:text="Nhà nguyên căn"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/apartment"
+            android:text="Căn hộ"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SỨC CHỨA"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_number"
+            android:text="Nhập số người/ phòng"
+            android:textColor="#666666"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GIỚI TÍNH"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sexall"
+            android:text="Tất cả"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/man"
+            android:text="Nam"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"
+            />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/woman"
+            android:text="Nữ"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIỆN TÍCH"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_are"
+            android:text="Nhập diện tích phòng"
+            android:textColor="#666666"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chi phí"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GIÁ CHO THUÊ"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_money"
+            android:text="Nhập giá cho thuê"
+            android:textColor="#666666"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ĐẶT CỌC"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_deposit"
+            android:text="Nhập số tiền hoặc số tháng"
+            android:textColor="#666666"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIỀN ĐIỆN"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_powerMoney"
+            android:text="Nhập số tiền"
+            android:textColor="#666666"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TIỀN NƯỚC"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_waterMoney"
+            android:text="Nhập số tiền"
+            android:textColor="#666666"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
